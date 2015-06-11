@@ -24,5 +24,11 @@ class puppetserver::config {
       setting => 'webserver.conf/webserver/ssl-port',
       type    => 'puppetserver',
       ;
+
+    'puppetserver/max-active-instances':
+      setting => 'puppetserver.conf/jruby-puppet/max-active-instances',
+      type    => 'puppetserver',
+      ;
+
   }
 }
