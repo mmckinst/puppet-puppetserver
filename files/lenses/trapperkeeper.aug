@@ -107,7 +107,7 @@ let hash (lns:lens) = [ Util.indent . key Rx.word . sep
 let entry_no_rec = hash (simple|array)
 
 (* View: entry *)
-let rec entry = hash (entry|simple|array)
+let rec entry = hash (simple|array)
 
 (************************************************************************
  * Group:                LENS AND FILTER
